@@ -24,14 +24,14 @@ const Search = () => {
           const data = await response.json();
           setSearchResults(data.data); //getting the data from the API and putting it into our search results variable
         }
-        //random will only return one single gif, not an array of gifs like trending & regular
-
+        //random will only return one single gif, not an array of gifs like trending & regular so we will set it as an array
+        //so error doesnt occur!
         if(selectedSearch==="Random"){
           const response = await fetch(
             `http://api.giphy.com/v1/gifs/random?api_key=UMD4uLrpQMCG9KsLap8Ma0WPrtbrQ4UC`
           );
           const data = await response.json();
-          setSearchResults([data.data]); //getting the data from the API and putting it into our search results variable
+          setSearchResults([data.data]); 
         }
         
     } catch (error) {
