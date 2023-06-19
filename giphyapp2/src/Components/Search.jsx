@@ -67,11 +67,7 @@ const Search = () => {
   
   return (
     <div>
-<<<<<<< HEAD
-      <h1>Search for a Gif!</h1>
-=======
       <h1 id="searchGif">Search for a Gif</h1>
->>>>>>> 6e3ac73 (updated css and search features)
       <input
         id= "clickFindGif"
         type="text"
@@ -79,14 +75,10 @@ const Search = () => {
         onChange={handleGif} 
         placeholder="Click and find a gif"
       />
-<<<<<<< HEAD
-      <button onClick={handleGifSearch}>Search</button>
-=======
       <button onClick={handleGifSearch} id="searchButton"
       
       >Search
       </button>
->>>>>>> 6e3ac73 (updated css and search features)
       <select id="gif-type" onChange = {searchType}>
         <option value ="">Default</option>
         <option value ="Regular">Regular</option>
@@ -96,11 +88,7 @@ const Search = () => {
       <p>
       </p>
 
-<<<<<<< HEAD
-      <div> 
-=======
     <div> 
->>>>>>> 6e3ac73 (updated css and search features)
         {searchResults.map((element) => (
           <img
             key={element.id}
