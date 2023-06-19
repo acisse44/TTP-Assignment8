@@ -8,7 +8,7 @@ const Search = () => {
   //fetching data from the API
   async function handleGifSearch() {
     try {
-      const response = await fetch(
+        const response = await fetch(
         `http://api.giphy.com/v1/gifs/search?q=${gif}&api_key=UMD4uLrpQMCG9KsLap8Ma0WPrtbrQ4UC`
       );
       const data = await response.json();
@@ -23,6 +23,9 @@ const Search = () => {
     setGif(event.target.value); //setting to the value of our event 
   }
 
+  // function searchType(){
+  //   selectedSearch = searchSelector.value;
+  // }
   
   return (
     <div>
@@ -34,6 +37,13 @@ const Search = () => {
         placeholder="Click and search a gif"
       />
       <button onClick={handleGifSearch}>Search</button>
+      <select id="gif-type" onchange>
+        <option value ="">Default</option>
+        <option value ="Regular">Regular</option>
+        <option value ="Trending">Trending</option>
+        <option value ="Random">Random</option>
+      </select>
+
       <div> 
         {searchResults.map((element) => (
           <img
