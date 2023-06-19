@@ -67,14 +67,26 @@ const Search = () => {
   
   return (
     <div>
+<<<<<<< HEAD
       <h1>Search for a Gif!</h1>
+=======
+      <h1 id="searchGif">Search for a Gif</h1>
+>>>>>>> 6e3ac73 (updated css and search features)
       <input
+        id= "clickFindGif"
         type="text"
         value={gif}
-        onChange={handleGif}
-        placeholder="Click and search a gif"
+        onChange={handleGif} 
+        placeholder="Click and find a gif"
       />
+<<<<<<< HEAD
       <button onClick={handleGifSearch}>Search</button>
+=======
+      <button onClick={handleGifSearch} id="searchButton"
+      
+      >Search
+      </button>
+>>>>>>> 6e3ac73 (updated css and search features)
       <select id="gif-type" onChange = {searchType}>
         <option value ="">Default</option>
         <option value ="Regular">Regular</option>
@@ -84,7 +96,11 @@ const Search = () => {
       <p>
       </p>
 
+<<<<<<< HEAD
       <div> 
+=======
+    <div> 
+>>>>>>> 6e3ac73 (updated css and search features)
         {searchResults.map((element) => (
           <img
             key={element.id}
@@ -98,37 +114,3 @@ const Search = () => {
 };
 
 export default Search;
-
-    
-    // async function handleGifSearch(){
-    //     //slides
-    //     fetch(`http://api.giphy.com/v1/gifs/search?q=${gif}&api_key=UMD4uLrpQMCG9KsLap8Ma0WPrtbrQ4UC`)
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         setGif(data);
-    //     }) 
-    //     .catch(error => {
-    //         console.log(error);
-    //     })
-    // }
-
-//     function handleGif(event){
-//      setGif(event.target.value);
-//      }
-
-//     return(
-//         <div>
-//             <h1> Search for a Gif  </h1>
-//             <input
-//                 type = "text"
-//                 value = {gif}
-//                 onChange = {handleGif}
-//                 placeholder='Click and search a gif'
-//             />
-
-//             <button onClick={handleGifSearch}>Search</button>
-//         </div>
-//     );
-// };
-
-// export default Search;
