@@ -1,0 +1,376 @@
+
+#heading {
+  text-align: center;
+}
+
+/* Center the container and align its items */
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Change to auto to allow the container to expand based on content */
+  margin: 0;
+  padding: 0;
+  margin-top: 7em;
+}
+
+/* Assuming a baseline font size of 16px */
+#chic-style-image,
+#abaya-style-image,
+#streetwear-style-image {
+  width: 20.125em; /* 450px / 16px = 28.125em */
+  height: 30.375em; /* 550px / 16px = 34.375em */
+  margin: 0.625em; /* 10px / 16px = 0.625em */
+  border: 1px solid #3B4428; /* Adding a border with the color */
+
+}
+
+#abaya-heading,
+#chic-heading,
+#street-heading {
+  text-align: center;
+  font-family: "cormorant garamond";
+  color: #886828;
+}
+
+#welcome-greeting {
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: lighter;
+  font-size: 4.5em;
+  color: #3B4428;
+}
+
+#home-video {
+  width: 84.375em;
+  height: 81.25em;
+  margin-left: 2.9em;
+  margin-top: -12em; /* Adjust this value to move the video closer */
+  align-content: center;
+}
+
+.navbar-container {
+  align-items: center;
+  background-color: #b5aeae;
+  display: flex;
+  padding: 20px;
+}
+
+.navbar-left {
+  flex: 1 1;
+}
+
+.navbar-title {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /* background-image: linear-gradient(135deg,#2e9463,#da799c); */
+  font-size: 24px;
+  background-color: #886828;
+  font-family: "cormorant garamond";
+  font-weight: bold;
+}
+
+.navbar-right {
+  align-items: center;
+  display: flex;
+}
+
+.navbar-links,
+.navbar-nav {
+  align-items: center;
+  display: flex;
+}
+
+.navbar-links a {
+  border: 2px solid #3B4428;;
+  border-radius: 5px;
+  color: #3B4428;;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.navbar-links a:hover {
+  background-color: #3B4428;;
+  color: #fff;
+}
+
+* {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+#about-us{
+  text-align: center;
+  margin-top: -170px;
+  font-family: "cormorant garamond";
+  font-size: 40px;
+  color: #3B4428;
+}
+
+#about-paragraph{
+  text-align: center;
+  font-family: "cormorant garamond";
+  font-size: 1.5em;
+  margin-top: 40px;
+  color:#3B4428;
+}
+
+#all-ami {
+  text-align: center;
+  margin-left: -40%; /* Moves the entire container to the left */
+  margin-top: 13%;
+}
+
+#about-me {
+  text-align: center;
+  font-family: "cormorant garamond";
+  background-color: #d6ac49;
+  width: 750px;
+  margin: 60px auto 0; /* Vertically centers the container */
+  padding: 20px; /* Add padding to create a box-like appearance */
+  border: 2px solid black; /* Add a black border around the container */
+  margin-right: 320px;
+}
+
+#about-me-paragraph{
+  margin-top: -21%;
+  text-align: center;
+  margin-left: 1345px;
+  width: 300px;
+  font-family: "cormorant garamond";
+  font-size: 27px;
+  border: 2px solid black; /* Add a black border around the container */
+  padding: 10px; 
+
+}
+
+#my-photo{
+  width: 400px;
+  height: 450px;
+  margin-right: -202px;
+  border: 2px solid black; /* Add a black border around the container */
+  padding: 5px; 
+}
+
+#newsletter-heading{
+margin-top: 150px;
+font-family: "cormorant garamond";
+font-weight: bold;
+font-size: 40px;
+text-align: center;
+}
+
+
+/** Login.css*/
+
+.login-form {
+  align-items: center;
+  -webkit-backdrop-filter: blur(px);
+  backdrop-filter: blur(px);
+  background: linear-gradient(135deg, #e1bd68, #d6ac49);
+  border: 2px solid hsla(0, 0%, 100%, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  padding: 50px 35px;
+  position: absolute;
+  top: 65%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 440px;
+  height: 300px;
+  margin-top: -110px;
+}
+
+.login-form * {
+  border: none;
+  color: #886828;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  outline: none;
+  font-family: "cormorant garamond";
+  color: #3B4428;
+}
+
+#log-in {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+.navbar-login{
+    background-color: #b0b0b0;
+}
+
+#email-label,
+#pass-label {
+  font-size: 20px;
+  text-align: left;
+}
+
+.email-input,
+.pass-input {
+  background-color: hsla(0, 0%, 100%, 0.468);
+  border-radius: 3px;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  height: 50px;
+  margin-top: 8px;
+  padding: 0 10px;
+  width: 250px;
+}
+
+.login-button {
+  background-color: #3B4428;
+  border-radius: 5px;
+  color: hsla(0, 0%, 100%, 0.468); 
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 15px 0;
+  width: 100px;
+  font-family: "cormorant garamond";
+}
+
+.login-button:hover {
+    background-color: #b0b0b0;
+    color: #fff;
+}
+
+
+/** Signup.css*/
+#signup-link{
+    margin-top: 50px;
+}
+.signup-form {
+    align-items: center;
+    -webkit-backdrop-filter: blur(px);
+    backdrop-filter: blur(px);
+    background: linear-gradient(135deg, #e1bd68, #d6ac49);
+    border: 2px solid hsla(0, 0%, 100%, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    padding: 50px 35px;
+    position: absolute;
+    top: 65%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 440px;
+    height: 600px;
+    margin-top: -40px;
+  }
+.signup-form * {
+    border: none;
+    color: #886828;
+    font-family: "cormorant garamond";
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    outline: none;
+    color: #3B4428;
+
+  }
+  #sign-up{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  #fname-label,
+  #lname-label,
+  #email-sign-label,
+  #pass-sign-label,
+  #bday-label,
+  #ref-label {
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .fname-input,
+  .lname-input,
+  .email-sign-input,
+  .pass-sign-input,
+  .bday-input {
+    background-color: hsla(0, 0%, 100%, 0.468);
+    border-radius: 3px;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    height: 50px;
+    margin-top: 8px;
+    padding: 0 10px;
+    width: 310px;
+  }
+  
+  #usr-ref{
+    background-color: hsla(0, 0%, 100%, 0.468);
+  }
+
+  .signup-button {
+    background-color: #3B4428;
+    border-radius: 5px;
+    color: hsla(0, 0%, 100%, 0.468); 
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 15px 0;
+    width: 100px;
+  }
+  .signup-button:hover {
+      background-color: #b0b0b0;
+      color: #fff;
+  }
+  
+  #login-link{
+      margin-top: 50px;
+  }
+
+
+
+/** WomenStyles.css*/
+#styles-video {
+  width: 100%; /* Take up full width of the page */
+  height: 40.25em; /* Set the desired height */
+  margin-top: 3em; /* Adjust this value to move the video closer */
+  display: block;
+  text-align: center;
+  align-content: center;
+}
+
+.video-container {
+  width: 100%;
+  overflow: hidden; /* Hide any overflow */
+}
+
+#select-style{
+  text-align: center;
+  margin-top: 4em;
+  font-family: "cormorant garamond";
+  font-size: 50px;
+  font-weight: lighter;
+  color: #3B4428;
+}
+
+.style-images{
+  width: 300px;
+  height: 300px;
+}
+
+.style-heading {
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: lighter;
+  font-size: 4.0em;
+  color: #3B4428;
+}

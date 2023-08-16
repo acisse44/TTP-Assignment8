@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="virtualUrbanModesty.css" />
+  </head>
+  <body>
+    <div class="navbar-container" >
+        <div class = "navbar-left">
+            <span>
+                <h1 class="navbar-title">Virtual Urban Modesty</h1>
+            </span>
+        </div>
+
+        <div class = "navbar-right" >
+            <nav class = "navbar-nav">
+                <div class = "navbar-links">
+                    <div class = "navbar-signup">
+                        <a href="virtualUrbanModesty.html">Home</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div className="login-background">
+      <form action="processLogin.php" method="POST" class="login-form">
+        <div>
+          <h2 id="log-in">Login !</h2>
+          <label id = "email-label" htmlFor="email">
+            <small>Email</small>
+          </label>
+          <input class = "email-input" type="text" placeholder="Enter your email..." name="usr-email" /> <br />
+        </div>
+
+        <div>
+          <label id = "pass-label"htmlFor="password">
+            <small>Password</small>
+          </label>
+          <input class = "pass-input" type="password" placeholder="Enter your password..." name="usr-pass" />
+          <br />
+        </div>
+        <br />
+        <button class="login-button" type="submit">Log In</button>
+        <!-- <input type="submit" name= "submit" value = "Login">  -->
+        <a href="signUp.html" id="signup-link">
+          <h2>Not a user? Sign up</h2>
+        </a>
+      </form>
+    </div>
+  </body>
+</html>

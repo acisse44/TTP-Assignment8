@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="virtualUrbanModesty.css">
+</head>
+<body>
+    <div class="navbar-container" >
+        <div class = "navbar-left">
+            <span>
+                <h1 class="navbar-title">Virtual Urban Modesty</h1>
+            </span>
+        </div>
+
+        <div class = "navbar-right" >
+            <nav class = "navbar-nav">
+                <div class = "navbar-links">
+                    <div class = "navbar-signup">
+                        <a href="virtualUrbanModesty.html">Home</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div className="signup-background">
+            <form action = "processSignup.php" method = "POST" class="signup-form">
+                <div>
+                    <h2 id="sign-up">Sign Up!</h2>
+                    <label id = "fname-label" htmlFor="fname">
+                      <small>First Name</small>
+                    </label>
+                    <input class = "fname-input" type="text" placeholder="Enter your first name..." name="usr-first" /> <br />
+                    
+                    <label id = "lname-label" htmlFor="email">
+                        <small>Last Name</small>
+                      </label>
+                      <input class = "lname-input" type="text" placeholder="Enter your last name..." name="usr-last" /> <br />
+                      
+                      <label id = "email-sign-label" htmlFor="email">
+                        <small>Email</small>
+                      </label>
+                      <input class = "email-sign-input" type="text" placeholder="Enter your email..." name="usr-email" /> <br />
+                   
+                      <label id = "pass-sign-label"htmlFor="password">
+                      <small>Password</small>
+                    </label>
+                    <input class = "pass-sign-input" type="password" placeholder="Enter your password..." name="usr-pass" />
+                    <br/>
+                    <label id = "bday-label" htmlFor="bday">
+                        <small>Birthday</small>
+                      </label>
+                      <input class = "bday-input" type="date" name="usr-bday" />
+                      <br/>
+
+                      <label id = "ref-label" htmlFor="reference">
+                        <small>How did you hear about us ?</small>
+                      </label>                      
+                      
+                      <select name = "usr-ref" id = "usr-ref">
+                        <option value = "friend"> Friend </option>
+                        <option value = "classmate"> Classmate </option>
+                        <option value = "collegue"> Collegue</option>
+                        <option value = "family"> Family </option>
+                        </select>
+                    <br/>
+                  </div>
+                  <br />
+                  <button class="signup-button" type="submit">Sign Up</button>
+                  <!-- <input type="submit" name= "submit" value = "Login">  -->
+                  <a href="login.html" id="login-link">
+                    <h2>Already a user? Login</h2>
+                  </a>
+                </form>
+            </div>
+            
+</body>
+</html>
